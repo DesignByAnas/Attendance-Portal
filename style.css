@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    margin: 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 2em;
+    color: #003366;
+    background-color: #e0e7ff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.summary {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #003366;
+}
+
+.summary div {
+    padding: 10px 20px;
+    background-color: #e0e7ff;
+    border-radius: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+table, th, td {
+    border: 1px solid #004080;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+th {
+    background-color: #004080;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #e0e7ff;
+    cursor: pointer;
+}
+
+.status input {
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.status input[type="radio"] {
+    accent-color: #004080;
+}
+
+.status {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.status label {
+    margin: 0 10px;
+    color: #004080;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.status input[type="radio"]:checked + label {
+    color: #003366;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    th, td {
+        padding: 10px;
+    }
+
+    .summary {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .summary div {
+        margin-bottom: 10px;
+    }
+}
